@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+
+ <div class="container" id="calc">
+   <h1 class="display-3">Представляем калькулятор</h1>
+   <p class="lead">Простые операции с числами</p>
+   <input id="num1" class="form-control form-control-lg" type="text" placeholder="Первое число" aria-label=".form-control-lg example">
+   <input id="num2" class="form-control form-control-lg" type="text" placeholder="Второе число" aria-label=".form-control-lg example">
+   <div class="btn-group" role="group" aria-label="Basic outlined example">
+     <button type="button" class="btn btn-outline-primary" onclick="plus()">+</button>
+     <button type="button" class="btn btn-outline-primary" onclick="minus()">-</button>
+     <button type="button" class="btn btn-outline-primary" onclick="devision()">/</button>
+     <button type="button" class="btn btn-outline-primary" onclick="multiply()">*</button>
+   </div>
+   <div class="display-6">Результат: <nobr class="display-6" id="out"></nobr></div>
+ </div>
+
+ <div class="container" id="stopwatch">
+   <h2 class="display-3">... И секундомер</h2>
+   <div class="display-6">Время: <nobr class="display-6" id="time__stopwatch">0</nobr></div>
+   <div class="btn-group" role="group" aria-label="Basic outlined example">
+     <button id="start" type="button" class="btn btn-outline-primary" onclick="start">Начать</button>
+     <button id="stop" type="button" class="btn btn-outline-primary">Стоп</button>
+     <button id="again" type="button" class="btn btn-outline-primary">Продолжить</button>
+     <button id="reset" type="button" class="btn btn-outline-primary">Сбросить</button>
+   </div>
+ </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
