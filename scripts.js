@@ -39,13 +39,3 @@ function multiply(){
 
     document.getElementById("out").innerHTML = multiply
 }
-
-// Stopwatch
-
-    let counter = 0;
-    let interval = setInterval("func_1()",1000);
-    function func_1() {
-        counter++;
-        document.getElementById("time__stopwatch").innerHTML = counter;
-        if(counter == 3) clearInterval(interval)
-    }
